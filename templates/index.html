@@ -92,7 +92,7 @@
         const [legend, data] = await Promise.all([legendPromise, analyzePromise]);
 
         renderLegend(legend);
-        renderBanner(data);
+        // renderBanner(data);
 
         (data.tokens || []).forEach(r => {
           const tr = document.createElement('tr');
